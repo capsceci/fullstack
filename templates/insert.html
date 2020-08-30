@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+</head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+<body class="insert">
+    <h3>Preencha os campos:</h3>
+        <form action="/insert" method="post">
+            <input type="text" name="name" placeholder="Name" class="text">
+            <input type="text" name="email" placeholder="Email" class="text">
+            <input type="text" name="address" placeholder="Endereço" class="text">
+            <input type="text" name="phone" placeholder="Telefone" class="text">
+            <input type="submit" value="Enviar" class="send">
+        </form>
+</body>
+</html>

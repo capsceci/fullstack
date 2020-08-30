@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deletar Membro</title>
+</head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+<script src="https://kit.fontawesome.com/e7e6feabe5.js" crossorigin="anonymous"></script>
+
+<body class="delete">
+<table class="table table-striped table-bordered table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>ID do Membro</th>
+        <th>Nome do Membro</th>
+        <th>Email</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td id="id">{{ member["id"] }}</td>
+        <td>{{ member["name"] }}</td>
+        <td>{{ member["email"] }}</td>
+        <td>{{ member["address"] }}</td>
+        <td>{{ member["phone"] }}</td>
+    </tbody>
+</table>
+
+<p>Você tem certeza que quer deletar?</p>
+<form method="post" action="/delete">
+  <input type="hidden" value="{{member['id']}}" name="id">
+  <div class="buttonn">
+      <input type="submit" value="Deletar" class="lixo">
+  </div>
+</form>
+<a href="/" class="home"><i class="fas fa-home fa-5x"></i></a>
+
+</body>
+</html>

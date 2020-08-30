@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Editar</title>
+</head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+<script src="https://kit.fontawesome.com/e7e6feabe5.js" crossorigin="anonymous"></script>
+<body class="edit">
+    <h3>Atualizar Informações </h3>
+     <p></p>
+     <form action="/edit" method="post">
+        <dev class="info">
+            <input type="hidden" name="id" value="{{ member["id"]}}" class="text">
+            <p>Nome:</p>
+            <input type="text" name="name" placeholder="Name" value="{{ member["name"]}}" class="text">
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="Email" value="{{ member["email"]}}" class="text">
+            <p>Endereço:</p>
+            <input type="text" name="address" placeholder="Endereço" value="{{ member["address"]}}" class="text">
+            <p>Telefone:</p>
+            <input type="text" name="phone" placeholder="Telefone" value="{{ member["phone"]}}" class="text">
+            <input type="submit" value="Salvar" class="save">
+                <a href="/" class="cancel"><i class="fas fa-window-close fa-lg"></i>Cancelar</a>
+        </dev>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,268 @@
+body {
+	color: black;
+	background: #f5f5f5;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 13px;
+}
+.table-responsive {
+    margin: 30px 0;
+}
+.table-wrapper {
+	background: #fff;
+	padding: 20px 25px;
+	border-radius: 3px;
+	min-width: 1000px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+	padding-bottom: 15px;
+	background: #435d7d;
+	color: #fff;
+	padding: 16px 30px;
+	min-width: 100%;
+	margin: -20px -25px 10px;
+	border-radius: 3px 3px 0 0;
+}
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 24px;
+}
+
+.btn
+{
+  float: right;
+  background: green;
+  text-align: center;
+  text-decoration: none;
+  font: 'opensans-bold', sans-serif;
+  border-radius: 8px;
+  color: white;
+  margin-top: 17px;
+  margin-bottom: 2px;
+
+  padding: 3px;
+
+}
+.btn i {
+	font-size: 21px;
+	margin-right: 8px;
+	margin-left: 5px;
+}
+.btn:hover {
+   background-color: #1B5B41;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* b. Table Styles
+/* ------------------------------------------------------------------ */
+table
+{
+   width: 100%;
+   vertical-align: central;
+   padding-top: 1%;
+
+
+}
+th
+{
+   color: white;
+ background-color: #425466;
+ padding-bottom: 20px;
+ padding-top: 20px;
+ font: 16px/22px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   text-align: center;
+
+}
+tr
+{
+text-align: center;
+}
+table, th, td
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+td
+{
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+tr:nth-child(even)
+{
+   background-color: #9FB1C4;
+}
+
+.icon
+{
+   color: black;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Edit Styles
+/* ------------------------------------------------------------------ */
+
+.edit
+{
+ background-color: #425466;
+}
+
+.edit h3
+{
+   font: 16px/22px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: white;
+   padding-bottom: 20px;
+}
+
+.edit .text
+{
+   padding: 10px;
+   border-radius: 8px;
+    color: black;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 20px;
+
+}
+.edit p
+{
+   font: 16px/22px 'opensans-bold', sans-serif;
+   color: white;
+}
+
+.edit .cancel
+{
+  background: #7A323B;
+  text-align: center;
+  text-decoration: none;
+  font: 16px/22px 'opensans-bold', sans-serif;
+  border-radius: 8px;
+  color: white;
+  padding: 1%;
+}
+.edit .cancel:hover
+{
+  background: #5B1D25;
+}
+.edit .cancel i
+{
+  margin-right: 5px;
+}
+
+.edit .save
+{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   border-radius: 8px;
+   background-color: green;
+   color: white;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px
+}
+
+.edit .save:hover
+{
+   background-color: #1B5B41 ;
+
+}
+/* ------------------------------------------------------------------ */
+/* d. Insert Styles
+/* ------------------------------------------------------------------ */
+
+.insert
+{
+ background-color: #425466;
+}
+
+.insert h3
+{
+   font: 16px/22px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: white;
+   padding-bottom: 20px;
+}
+
+.insert .text
+{
+   padding: 10px;
+   border-radius: 8px;
+    color: black;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 20px;
+
+}
+
+.insert .send
+{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   border-radius: 8px;
+   background-color: green;
+   color: white;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px
+}
+.insert .send:hover
+{
+   background-color: #1B5B41 ;
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Delete Styles
+/* ------------------------------------------------------------------ */
+.delete p
+{
+    font: 22px/28px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   width: 100%;
+   text-align: center;
+   color: #425466;
+   padding-bottom: 20px;
+}
+
+.delete .buttonn
+{
+   text-align: center;
+   width: 100%;
+
+}
+
+.delete .lixo
+{
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 40px;
+   padding-right: 40px;
+   border-radius: 8px;
+   background-color: white;
+   color: #324049;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 16px
+}
+.delete .lixo:hover
+{
+   background-color: #7E94A3;
+
+}
+
+.delete .home i
+{
+   color: #324049;
+   float: right;
+   padding: 1%;
+}
+
+.delete .home i:hover
+{
+   color: #031C2D;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Membros</title>
+</head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+<script src="https://kit.fontawesome.com/e7e6feabe5.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+
+
+<body>
+    <div class="container-xl">
+	<div class="table-responsive">
+		<div class="table-wrapper">
+			<div class="table-title">
+		        <h2 class="title">Membros</h2>
+		        <div class= "addmember">
+                <p>
+                    <a href="/insert" class="btn">
+                    <i class="fa fa-plus-circle fa-7x"></i>
+                    Adicionar Novo Membro
+                    </a>
+                </p>
+	        </div>
+	    </div>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID do Membro</th>
+        <th>Nome do Membro</th>
+        <th>Email</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in rows %}
+    <tr>
+        <td name="id">{{ row["id"] }}</td>
+        <td>{{ row["name"] }}</td>
+        <td>{{ row["email"] }}</td>
+        <td>{{ row["address"] }}</td>
+        <td>{{ row["phone"] }}</td>
+
+        <td>
+            <form method="POST" action="/edit">
+
+            <a href="/edit?id={{ row["id"]}}"><span class="glyphicon glyphicon-pencil"><i class="fas fa-user-edit fa-lg icon"></i></span></a>
+            <a href="/delete?id={{ row["id"] }}"><span class="glyphicon glyphicon-pencil"><i class="fas fa-trash-alt fa-lg icon"></i></span></a>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+    </div>
+	</div>
+	</div>
+</table>
+</body>
+</html>
