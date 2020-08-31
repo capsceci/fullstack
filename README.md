@@ -5,6 +5,7 @@
     2. Instalar as dependências:
         pip install -r requirements.txt
     3. Rodar:
-        set FLASK_APP=application.py
+        set FLASK_APP=application.py (Windows)
+        export FLASK_APP=application.py (Mac, Linux)
     4. Por fim, executar:
         flask run
